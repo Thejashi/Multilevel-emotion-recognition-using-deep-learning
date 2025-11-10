@@ -36,7 +36,7 @@ It features a **Flask-based web app** that allows users to input EEG signal valu
 
 ## 🧩 Project Structure
 
-
+```
 EEG_Emotion_Recognition/
 │
 ├── preprocess.py                 # Loads and preprocesses EEG data
