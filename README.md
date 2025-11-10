@@ -58,7 +58,7 @@ EEG_Emotion_Recognition/
 └── README.md                     # Project documentation
 
 ````
-
+````
 ---
 ````
 ## ⚙️ Installation
