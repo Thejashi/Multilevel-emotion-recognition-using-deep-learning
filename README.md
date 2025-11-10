@@ -1,8 +1,6 @@
 
-
 # 🧠 EEG Emotion Recognition Using Machine Learning
-````
-````
+
 
 
 ## 📘 Overview
@@ -56,9 +54,7 @@ EEG_Emotion_Recognition/
 └── README.md                     # Project documentation
 
 ````
-````
----
-````
+
 ## ⚙️ Installation
 
 ### Step 1: Clone the Repository
