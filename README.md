@@ -4,7 +4,7 @@ Here’s an **enhanced, polished version** of your README with proper formatting
 
 ```markdown
 # 🧠 EEG Emotion Recognition Using Machine Learning
-
+````
 ---
 
 ## 📘 Overview
