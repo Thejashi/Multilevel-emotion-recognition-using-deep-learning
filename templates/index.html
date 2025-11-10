@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEG Emotion Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <script>
+        function showForm() {
+            document.getElementById('inputForm').style.display = 'block';
+            document.getElementById('testButton').style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 EEG Emotion Recognition</h1>
+        <p style="color: #555; font-size: 14px;">Analyze EEG signals to detect emotion and intensity</p>
+
+        <!-- Step 1: Test Button -->
+        <button id="testButton" onclick="showForm()">Test It</button>
+
+        <!-- Step 2: Input Form -->
+        <form id="inputForm" action="/predict" method="POST" style="display: none;">
+            <label for="attention">Attention:</label>
+            <input type="number" step="0.01" name="attention" required>
+
+            <label for="meditation">Meditation:</label>
+            <input type="number" step="0.01" name="meditation" required>
+
+            <label for="eyeblink">Eye Blink:</label>
+            <input type="number" step="0.01" name="eyeblink" required>
+
+            <label for="average">Average:</label>
+            <input type="number" step="0.01" name="average" required>
+
+            <button type="submit">Find Your Emotion</button>
+        </form>
+
+        <!-- Step 3: Results -->
+        {% if emotion and intensity %}
+            <div class="results">
+                <h2>Results:</h2>
+                <p>🔥 <strong>Predicted Emotion:</strong> {{ emotion }}</p>
+                <p>💥 <strong>Predicted Intensity:</strong> {{ intensity }}</p>
+            </div>
+        {% elif error %}
+            <div class="error">
+                <p>⚠️ Error: {{ error }}</p>
+            </div>
+        {% endif %}
+
+        <!-- Step 4: Terminal Output Section -->
+        {% if output %}
+            <div class="terminal-output">
+                <h2>📟 Model Output</h2>
+                <pre>{{ output }}</pre>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
