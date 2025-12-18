@@ -157,7 +157,7 @@ This project is **open-source** and available for **educational and research pur
 
 ## 👨‍💻 Author
 
-**THEJASHRI NARAYANAN**
+**THEJASHI S**
 B.E. Computer Science and Engineering
 Sathyabama Institute of Science and Technology
 
