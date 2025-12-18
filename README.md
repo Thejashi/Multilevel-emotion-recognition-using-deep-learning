@@ -17,7 +17,6 @@ It features a **Flask-based web app** that allows users to input EEG signal valu
 - Responsive front-end design with **background visuals**  
 - 7 emotion categories:
   - **Concentrated**
-  - **Drunker**
   - **Excited**
   - **Fear**
   - **Happy**
